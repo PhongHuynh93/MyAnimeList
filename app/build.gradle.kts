@@ -5,7 +5,6 @@ plugins {
     kotlin(Plugins.kotlinExtensions)
     kotlin(Plugins.kapt)
     id(Plugins.safeArgs)
-    id("kotlin-android")
 }
 
 android {
@@ -36,6 +35,7 @@ android {
     }
 
     composeOptions {
+        kotlinCompilerVersion = "1.4.0"
         kotlinCompilerExtensionVersion = "1.0.0-alpha01"
     }
 }
